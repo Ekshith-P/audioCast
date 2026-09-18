@@ -1,0 +1,3 @@
+echo "xcuserdata/" >> .gitignore
+echo "*.xcuserstate" >> .gitignore
+echo ".DS_Store" >> .gitignore

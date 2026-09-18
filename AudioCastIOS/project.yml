@@ -1,0 +1,21 @@
+name: AudioCastIOS
+options:
+  bundleIdPrefix: com.audiocast
+targets:
+  AudioCastIOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: Sources
+    info:
+      path: Info.plist
+      properties:
+        CFBundleName: AudioCastIOS
+        CFBundleIdentifier: com.audiocast.AudioCastIOS
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UIBackgroundModes:
+          - audio
+        NSLocalNetworkUsageDescription: "AudioCast needs access to your local network to discover and stream audio from your Mac."
+        NSBonjourServices:
+          - _audiocast._tcp
